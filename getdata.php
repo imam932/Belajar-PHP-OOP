@@ -5,9 +5,11 @@ $db = new Database;
 
 $db_connect = $db->connect();
 
-$sql = "SELECT * FROM users";
+$sql = "SELECT * FROM users WHERE id =13 ";
 
 $result = $db_connect->query($sql);
+
+//var_dump($result->fetch_assoc());
 
 if ($result->num_rows > 0) {
 
@@ -15,7 +17,7 @@ if ($result->num_rows > 0) {
         echo "<br>";
         echo "id : ". $row['id'];
         echo "<br>";
-        echo "nama : ". $row['fistname']. " + ". $row['lastname'];
+        echo "nama : ". $row['firstname']. "  ". $row['lastname'];
         echo "<br>";
         echo "email : ". $row['email'];
     }
@@ -24,4 +26,5 @@ if ($result->num_rows > 0) {
     echo "data 0";
 }
 
-$db->close();
+
+//$db_connect->destroy();
