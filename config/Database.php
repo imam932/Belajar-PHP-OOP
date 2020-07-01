@@ -1,18 +1,18 @@
 <?php 
 class Database{
  
-	var $host = "localhost";
-	var $username = "root";
-	var $password = "nawawi932";
-	var $database = "db_rakryan";
+    var $servername = "localhost";
+    var $username = "root";
+    var $password = "";
+    var $dbname = "db_coba";
 	var $result = "";
  
 	function __construct(){
 		$this->result = new mysqli(
-			$this->host, 
+			$this->servername, 
 			$this->username,
 			$this->password,
-			$this->database
+			$this->dbname
 		);
 
 	}
