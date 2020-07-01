@@ -5,10 +5,10 @@ class Database{
 	var $username = "root";
 	var $password = "nawawi932";
 	var $database = "db_rakryan";
-	var $koneksi = "";
+	var $result = "";
  
 	function __construct(){
-		$this->koneksi = new mysqli(
+		$this->result = new mysqli(
 			$this->host, 
 			$this->username,
 			$this->password,
@@ -17,17 +17,17 @@ class Database{
 
 	}
 
-	public function koneksi()
+	public function connect()
 	{
-		if($this->koneksi->connect_error){
+		if($this->result->connect_error){
 			die("Koneksi database MySQL dan PHP Gagal ");
 		}
 
-		return $this->koneksi;
+		return $this->result;
 	}
 
 	public function destroy()
 	{
-		$this->koneksi->close();
+		$this->result->close();
 	}
 } 
