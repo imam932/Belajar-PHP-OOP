@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "nawawi932";
-$database = "db_rakryan";
+$password = "";
+$database = "db_coba";
 
 
 $koneksi = new mysqli($servername, $username, $password, $database);
@@ -12,7 +12,7 @@ if ($koneksi->connect_error) {
 }
 
 // membuat table
-$sql = "CREATE TABLE users (
+$sql = "CREATE TABLE coba (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     fistname VARCHAR(30) NOT NULL,
     lastname VARCHAR(30) NOT NULL,
