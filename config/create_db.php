@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "nawawi932";
+$password = "";
 
 
 $koneksi = new mysqli($servername, $username, $password);
@@ -12,7 +12,7 @@ if ($koneksi->connect_error) {
 
 // echo "connction success";
 
-$sql = "CREATE DATABASE db_rakryan";
+$sql = "CREATE DATABASE Register";
 if ($koneksi->query($sql) === TRUE) {
     echo "Database berhasil di buat";
 }else{

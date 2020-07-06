@@ -4,7 +4,7 @@ class Database{
     var $servername = "localhost";
     var $username = "root";
     var $password = "";
-    var $dbname = "db_coba";
+    var $dbname = "register";
 	var $result = "";
  
 	function __construct(){

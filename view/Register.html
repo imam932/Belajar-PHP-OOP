@@ -1,0 +1,20 @@
+<html>
+<body>
+<form action="./../controller/insertregister.php" method="post">
+Name: <br><input type="text" name="name"required><br>
+No hp:<br> <input type="number" name="nohp"/><br>
+Email:<br><input type="email" name="email" placeholder="your email..." /><br>
+Jenis Kelamin : <br>
+<input type="radio" class="form-check-input" name="optradio"value="Pria">Pria 
+<input type="radio" class="form-check-input" name="optradio"value="perempuan">perempuan
+<br>Tanggal Lahir :<div class="form-group">
+    <input type="date" class="form-control" name="ttl">
+    <div class="form-group">
+      <label for="textarea">Alamat:</label><br>
+      <textarea class="form-control" rows="3" id="textarea" name="alamat"></textarea>
+    </div>
+    Pasword : <br>
+    <div class="form-group">
+      <input type="password" placeholder="Password" class="form-control" id="password" name="password">
+    </div>
+    <input type="submit">
