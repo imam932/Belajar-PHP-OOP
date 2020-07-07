@@ -4,7 +4,7 @@ $id = $_GET['id'];
 require "./../config/Database.php";
 $db = new Database;
 $db_connect = $db->connect();
-$sql = "SELECT * FROM registerr WHERE id='1'";
+$sql = "SELECT * FROM registerr WHERE id='$id'";
 $result = $db_connect->query($sql);
 //var_dump($result->fetch_assoc());
 ?>
